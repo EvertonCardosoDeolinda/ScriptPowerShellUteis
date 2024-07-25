@@ -1,0 +1,13 @@
+#!/bin/bash
+ 
+# Diretório de origem (pasta a ser movida)
+SOURCE_DIR_PREFIX="/mnt/DATA/usuarios/ANGELONI"
+DEST_DIR="/mnt/DATA/usuarios/ANGELONI/DESLIGADOS2"
+ 
+# Lista de usuários
+USERS=("lucas.dessunti" "junior.correa" "loana.jose" "benjamin.machado" "ricardo.santana" "kauan.lima" "raphaelli.santos" "vinhos17" "fernando.santos" "dimas.silva" "ana.poleza" "charles.muller" "cleonice.lamim" "cartao09" "vinicius.pacheco" "joao.mortari" "mariza.correa" "david.ramos" "treinamento16" "antonio" "jefferson.nazario" "gabriela.bermudez" "samuel.ssantos" "ronaldo.santos" "luciano.rodrigues" "daniela.teixeira" "mount.sami" "miguel.cortes" "laudenir.ribeiro" "valdinelb.mariz" "arthur.souza" "jaqueline.batista" "maria.castro" "jhullyene.sousa")
+ 
+# Mova as pastas para o diretório de destino
+for user in "${USERS[@]}"; do
+    mv "$SOURCE_DIR_PREFIX/$user" "$DEST_DIR"/
+done
